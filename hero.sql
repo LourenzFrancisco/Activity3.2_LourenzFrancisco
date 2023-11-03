@@ -151,3 +151,10 @@ VALUES
     (10, 10, 110);  -- Chou has Feather of Heaven
 
 ALTER TABLE Item ADD Item_price DECIMAL (10,2);
+
+UPDATE Hero
+SET is_active = 'false'
+WHERE hero_id = 1;
+
+DELETE FROM HeroItem 
+WHERE hero_id = 1;
